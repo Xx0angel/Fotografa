@@ -1,0 +1,278 @@
+/* Import */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@1,200&display=swap");
+
+/* Vars */
+$lettercolor: #4f5353;
+$fontmain: "Bebas Neue", cursive;
+$fontsecond: "Poppins", sans-serif;
+$letter-bg: #b2babb;
+$bg-color-movil: #fbfcfc;
+/* header */
+
+#header {
+    width: 40%;
+    margin: 50px auto 0 auto;
+    h1 {
+        font-size: $fontmain;
+        padding: 10px 10px 0 10px;
+        color: $lettercolor;
+    }
+}
+
+.bar-menu {
+    visibility: hidden;
+}
+.close-menu {
+    visibility: hidden;
+}
+#navbar {
+    width: 40%;
+    margin: 0 auto;
+    ul {
+        padding: 0;
+        transition: 0.2s ease-in;
+        -webkit-transition: 0.2s ease-in;
+        -moz-transition: 0.2s ease-in;
+        -ms-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        a{
+            text-decoration: none;
+            color: $lettercolor;
+            font-family: $fontsecond;
+
+            li {
+                font-size: 1.2em;
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px 0 0;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.container-c {
+    width: 70%;
+    margin: 0 15%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .clase-a {
+        a {
+            img {
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    }
+    .sub-txt {
+        width: 70%;
+        visibility: hidden;
+        position: absolute;
+        margin-left: 30%;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        h2 {
+            font-size: 64px;
+        }
+    }
+}
+
+.container-c:hover {
+    .clase-a {
+        a {
+            img {
+                filter: grayscale(47%) blur(1px) brightness(55%) contrast(104%);
+                -webkit-filter: grayscale(47%) blur(1px) brightness(55%) contrast(104%);
+                -moz-filter: grayscale(47%) blur(1px) brightness(55%) contrast(104%);
+            }
+        }
+    }
+
+    .sub-txt {
+        visibility: visible;
+    }
+}
+
+/* back the top */
+
+#on-top {
+    display: flex;
+    margin: 50px 0 25px 0;
+    .v-top {
+        margin: auto;
+
+        a {
+            color: $letter-bg;
+        }
+
+        a:hover {
+            color: $lettercolor;
+        }
+
+        p {
+            display: inline-block;
+            a {
+                text-decoration: none;
+                color: $letter-bg;
+                font-size: 1em;
+            }
+            a:hover {
+                color: $lettercolor;
+            }
+        }
+    }
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    #icons-media {
+        margin: 0 auto 150px auto;
+        .media {
+            font-size: 20px;
+            margin: 0 10px;
+            color: $letter-bg;
+            cursor: pointer;
+        }
+        .media:hover {
+            color: $lettercolor;
+        }
+    }
+}
+
+/* Articulos */
+
+.articulo {
+    width: 40%;
+    margin: 50px auto;
+    color: $lettercolor;
+    h2 {
+        font-size: 64px;
+        font-family: $fontmain;
+    }
+
+    p {
+        font-size: 1.2em;
+        font-family: $fontsecond;
+    }
+}
+
+.sec-img {
+    width: 50%;
+    margin: 25px 25% 50px 25%;
+    img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .img4 {
+        width: 80%;
+        margin: 20px 10%;
+    }
+}
+
+.a-top-a {
+    color: #8c8d8d;
+    .a-top {
+        background-color: #dee6e7;
+        position: fixed;
+        top: 80%;
+        left: 90%;
+        padding: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        .coni1 {
+            font-size: 30px;
+        }
+    }
+}
+
+.a-top-a:hover {
+    color: #dee6e7;
+    .a-top {
+        background-color: #aeafaf;
+    }
+}
+.p-p1 {
+    padding: 50px 0 50px 50px;
+}
+
+/* about me */
+
+.img-about {
+    width: 70%;
+    margin: 25px 15% 50px 15%;
+
+    img {
+        width: 33%;
+    }
+}
+
+.info-about {
+    width: 40%;
+    margin: 50px auto;
+    color: $lettercolor;
+    p {
+        font-size: 1.2em;
+        font-family: $fontsecond;
+    }
+}
+
+/* formulario */
+
+.formulario-c {
+    width: 40%;
+    margin: 0 30%;
+    form {
+        margin: 0 70px;
+        padding: 10px;
+
+        label {
+            display: block;
+            margin: 5px;
+        }
+        .input {
+            display: inline-block;
+            width: 80%;
+            padding: 7px;
+            margin: 5px;
+        }
+
+        textarea {
+            width: 80%;
+            margin: 5px;
+            resize: none;
+        }
+    }
+}
+
+.input-s {
+    font-size: 1.2em;
+    display: block;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: $letter-bg;
+    border: 1px;
+    border-radius: 5%;
+}
+
+.input-s:hover {
+    background-color: $lettercolor;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px $letter-bg inset;
+}
+
+/* Querys */
+
+@import "tablet";
+
+@import "movil";
+
+@import "pcnormal";

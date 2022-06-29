@@ -1,0 +1,96 @@
+$breakpoint-tablet: 768px;
+
+@media screen and (max-width: $breakpoint-tablet) {
+    /*Navigation*/ 
+    #navbar{
+        width: 90%;
+        margin: 0 5%;
+        ul{
+            text-align: center;
+        }
+    }
+
+    /*Main Content*/ 
+    .container-c {
+        width: 80%;
+        margin: 0 10%;
+
+        .clase-a {
+            a {
+                img {
+                    filter: grayscale(47%) blur(1px) brightness(55%) contrast(104%);
+                    -webkit-filter: grayscale(47%) blur(1px) brightness(55%) contrast(104%);
+                    -moz-filter: grayscale(47%) blur(1px) brightness(55%) contrast(104%);
+                }
+            }
+        }
+        .sub-txt {
+            width: 90%;
+            margin-left: 10%;
+            visibility: visible;
+            h3 {
+                font-size: 1.4em;
+            }
+            h2 {
+                font-size: 2.75em;
+            }
+            p {
+                font-size: .9em;
+            }
+        }
+    }
+
+    /* About me */
+    .img-about {
+        width: 90%;
+        margin: 25px 5% 50px 5%;
+        display: flex;
+        img{
+            width: 33%;
+        }
+    }
+    
+    .info-about {
+        width: 80%;
+        margin: 50px auto;
+        p {
+            font-size: 1.2em;
+        }
+    }
+
+    /* Articles */ 
+
+    .articulo {
+        width: 80%;
+        h2 {
+            font-size: 2em; // 32px
+        }
+    
+        p {
+            font-size: 1.2em; // 18px
+        }
+    }
+
+    .sec-img{
+        width: 90%;
+        margin: 25px 5% 25px 5%; 
+    }
+
+    /* Forms */ 
+
+    .formulario-c {
+        width: 90%;
+        margin: 0 5%;
+        form {
+            margin: 0 0;
+            .input {
+                width: 100%;
+                padding: 7px;
+            }
+
+            textarea {
+                width: 100%;
+            }
+        }
+    }
+}

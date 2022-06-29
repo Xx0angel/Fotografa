@@ -1,0 +1,124 @@
+$breakpoint-movil: 500px;
+
+@media (max-width: $breakpoint-movil) {
+    #header {
+        width: 90%;
+        margin: 50px 5% 0 5%;
+        padding-left: 10%;
+        h1 {
+            padding: 10px;
+        }
+    }
+    .container-c {
+        .sub-txt {
+            h3 {
+                font-size: 0.8em;
+            }
+            h2 {
+                font-size: 1.25em;
+            }
+            p {
+                font-size: 0.6em;
+            }
+        }
+    }
+
+    /* Articulos */
+    .articulo {
+        h2 {
+            font-size: 1.8em;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+
+    /* About me */
+    .img-about {
+        width: 90%;
+        display: block;
+        img {
+            width: 90%;
+            margin: 10px 5%;
+        }
+    }
+
+    .info-about {
+        width: 90%;
+        p {
+            font-size: 1em;
+        }
+    }
+
+    /* Footer */
+    footer {
+        #icons-media {
+            margin: 0 auto 50px auto;
+        }
+    }
+
+    .a-top-a {
+        .a-top {
+            left: 80%;
+        }
+    }
+
+    /* Close Menu*/
+    .close-menu {
+        visibility: visible;
+        font-size: 30px;
+        margin: 30px;
+        position: absolute;
+        left: 70%;
+        z-index: 121;
+    }
+
+    .show-two {
+        visibility: hidden;
+    }
+
+    /* Navigation*/
+    #navbar {
+        margin: 0;
+        padding: 0;
+        z-index: 100;
+        top: -112px;
+        position: relative;
+        width: 100%;
+
+        .bar-menu {
+            visibility: visible;
+            font-size: 30px;
+            position: absolute;
+            margin: 30px;
+        }
+
+        ul {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            padding: 10px;
+            background: $bg-color-movil;
+            
+
+            a {
+                li {
+                    display: inline-block;
+                    width: 100%;
+                    margin: 0;
+                    margin-top: 80px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    /* Showme Menu*/
+    .show {
+        visibility: hidden;
+    }
+
+    #main {
+        margin: 50px 0 0 0;
+    }
+}
